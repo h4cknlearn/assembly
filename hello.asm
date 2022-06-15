@@ -8,6 +8,7 @@ _start:
   mov   rax, 1                         ; syscall 'write' number
   mov   rdi, 1                         ; stdout descriptor
   mov   rsi, message                   ; string address 
+  mov   rdx, 14                        ; string size (bytes)
   syscall
   
   mov   rax, 60                        ; syscall 'exit' number
